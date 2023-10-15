@@ -1,0 +1,47 @@
+.scoreboard {
+    @include dflex(space-between, flex-start);
+    @include widthauto(90%);
+    margin-top: 50px;
+
+
+    &__desc {
+
+        &__title {
+            font-size: 1.2rem;
+            @media (min-width: 480px){
+                font-size: 2rem;
+            }
+        }
+
+        &__description {
+            width: 60%;
+            font-size: 0.9rem;
+            @media (min-width: 480px){
+                font-size: 1.5rem;
+            }
+
+            &>span {
+                font-weight: bolder;
+            }
+        }
+
+        
+    }
+
+    &__score {
+        @include dflex(flex-start, center, column, nowrap);
+        background-color: $color-main-medium;
+        padding: $padding-s $padding-m;
+        border-radius: 8px;
+        font-size: 1.5rem;
+
+        &__title {
+            margin-bottom: $margin-s;
+        }
+
+        &__number {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+    }
+}
