@@ -1,7 +1,7 @@
 .scoreboard {
     @include dflex(space-between, flex-start);
     @include widthauto(90%);
-    margin-top: 50px;
+    margin-top: 30px;
 
 
     &__desc {
@@ -33,7 +33,7 @@
         background-color: $color-main-medium;
         padding: $padding-s $padding-m;
         border-radius: 8px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
 
         &__title {
             margin-bottom: $margin-s;
@@ -41,7 +41,7 @@
 
         &__number {
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
 }
